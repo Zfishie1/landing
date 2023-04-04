@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+@import url("components/container.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+body { 
+  background-image: url("images/stockgraphbackground.jpg");   
+padding: 150px, 0px;
+background-size: cover;  
+background-position: center;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+/*h1{
+  color: green;
+  font-size: 90px;
+}*/
+h2{
+  color: black;
+  font-size: 36px;
+}
+h4{
+  color: black;
+  font-size: 16px;
+}
+h3{
+  color: red;
+  font-size: 48px;
+}
+a {
+  text-decoration: none;
+}
+.banner h1 {
+
+  font-size: 50px;
+}
+.card-white{
+  background-color: white;
+    padding: 50px;
+    box-shadow: 0px 10px 35px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+ }
+ .zoom {
+  transition: transform .2s; 
+}
+.zoom:hover {
+  transform: scale(1.25);
+}
+.button{}
+h1 {
+        font-size: 48px; /* make our h1 tag larger */
+        font-family: sans-serif; /* choosing our font */
+        background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(144, 238, 144) 52%, rgb(224, 246, 255) 60%, rgb(60, 179, 113) 61%); /* you can change the colors based on your preference */
+        background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+        -webkit-background-clip: text; /*for browsers compatibility */
+        -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+        animation: wave 2000ms ease alternate infinite;
+        transition: all 0.4s ease;
+      }
+      @keyframes wave {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 50vw 10px;
+        }
+      }
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+} 
+
+.bounce { 
+    animation-name: bounce; 
+}
+.card {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px, 10px, 30px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 30px;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+}
